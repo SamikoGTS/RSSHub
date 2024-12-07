@@ -226,8 +226,8 @@ importers:
         specifier: 1.1.0
         version: 1.1.0
       socks-proxy-agent:
-        specifier: 8.0.4
-        version: 8.0.4
+        specifier: 8.0.5
+        version: 8.0.5
       source-map:
         specifier: 0.7.4
         version: 0.7.4
@@ -2152,6 +2152,10 @@ packages:
 
   agent-base@7.1.1:
     resolution: {integrity: sha512-H0TSyFNDMomMNJQBn8wFV5YC/2eJ+VXECwOadZJT554xP6cODZHPX3H9QMQECxvrgiSOP1pHjy1sMWQVYJOUOA==}
+    engines: {node: '>= 14'}
+
+  agent-base@7.1.2:
+    resolution: {integrity: sha512-JVzqkCNRT+VfqzzgPWDPnwvDheSAUdiMUn3NoLXpDJF5lRqeJqyC9iGsAxIOAW+mzIdq+uP1TvcX6bMtrH0agg==}
     engines: {node: '>= 14'}
 
   ajv@6.12.6:
@@ -5009,8 +5013,8 @@ packages:
     resolution: {integrity: sha512-CjU5pyRfwOtaOITYv5C8DzpZ8XA/ieRsDpr93HI2r6e3YInC6moZpSQbmUtg8cTk58tq2x3jcG2gv+p1IZGmMA==}
     engines: {node: '>=8'}
 
-  socks-proxy-agent@8.0.4:
-    resolution: {integrity: sha512-GNAq/eg8Udq2x0eNiFkr9gRg5bA7PXEWagQdeRX4cPSG+X/8V38v637gim9bjFptMk1QWsCTr0ttrJEiXbNnRw==}
+  socks-proxy-agent@8.0.5:
+    resolution: {integrity: sha512-HehCEsotFqbPW9sJ8WVYB6UbmIMv7kUUORIF2Nncq4VQvBfNBLibW9YZR5dlYCSUhwcD628pRllm7n+E+YTzJw==}
     engines: {node: '>= 14'}
 
   socks@2.8.3:
@@ -7652,6 +7656,12 @@ snapshots:
       - supports-color
 
   agent-base@7.1.1:
+    dependencies:
+      debug: 4.3.7
+    transitivePeerDependencies:
+      - supports-color
+
+  agent-base@7.1.2:
     dependencies:
       debug: 4.3.7
     transitivePeerDependencies:
@@ -10305,7 +10315,7 @@ snapshots:
       http-proxy-agent: 7.0.2
       https-proxy-agent: 7.0.5
       pac-resolver: 7.0.1
-      socks-proxy-agent: 8.0.4
+      socks-proxy-agent: 8.0.5
     transitivePeerDependencies:
       - supports-color
 
@@ -10483,14 +10493,14 @@ snapshots:
       lru-cache: 7.18.3
       pac-proxy-agent: 7.0.2
       proxy-from-env: 1.1.0
-      socks-proxy-agent: 8.0.4
+      socks-proxy-agent: 8.0.5
     transitivePeerDependencies:
       - supports-color
 
   proxy-chain@2.5.6:
     dependencies:
       socks: 2.8.3
-      socks-proxy-agent: 8.0.4
+      socks-proxy-agent: 8.0.5
       tslib: 2.8.1
     transitivePeerDependencies:
       - supports-color
@@ -10895,9 +10905,9 @@ snapshots:
       map-obj: 4.3.0
       to-snake-case: 1.0.0
 
-  socks-proxy-agent@8.0.4:
+  socks-proxy-agent@8.0.5:
     dependencies:
-      agent-base: 7.1.1
+      agent-base: 7.1.2
       debug: 4.3.7
       socks: 2.8.3
     transitivePeerDependencies:
